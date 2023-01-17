@@ -37,5 +37,8 @@ const carousel1 = () =>{
   x1[slideIndex1 - 1].style.display = 'block';
   setTimeout(carousel1, 2000); // Change image every 2 seconds
 }
+let x = window.matchMedia("(max-width: 700px)")
+if (x.matches) { // If media query matches
+  carousel1();
+}
 
-carousel1();
